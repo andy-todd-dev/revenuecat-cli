@@ -42,5 +42,7 @@
   },
 
   // Connect as non-root user
-  "remoteUser": "developer"
+  "remoteUser": "developer",
+
+  "postCreateCommand": ".devcontainer/post_create.sh"
 }

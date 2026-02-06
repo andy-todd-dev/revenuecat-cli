@@ -1,0 +1,41 @@
+{
+  "name": "revenuecat-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andy-todd-dev/revenuecat-cli.git"
+  },
+  "keywords": [],
+  "author": "Andrew Todd",
+  "license": "GPL-3.0-only",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/andy-todd-dev/revenuecat-cli/issues"
+  },
+  "homepage": "https://github.com/andy-todd-dev/revenuecat-cli#readme",
+  "devDependencies": {
+    "@types/node": "^25.2.1",
+    "eslint": "^9.39.2",
+    "prettier": "^3.8.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "bin": {
+    "revcat": "./bin/run.js"
+  },
+  "oclif": {
+    "bin": "revcat",
+    "commands": "./dist/commands",
+    "dirname": "revcat",
+    "topicSeparator": " "
+  },
+  "dependencies": {
+    "@oclif/core": "^4.8.0",
+    "@visulima/tabular": "^3.1.3"
+  }
+}
