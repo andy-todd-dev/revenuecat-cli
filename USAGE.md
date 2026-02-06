@@ -45,9 +45,11 @@ revcat customers get <userId>
 ```
 
 **Arguments:**
+
 - `userId` - RevenueCat app user ID (required)
 
 **Flags:**
+
 - `-k, --apiKey` - RevenueCat API key (or set `REVENUECAT_API_KEY`)
 - `-p, --projectId` - RevenueCat project ID (or set `REVENUECAT_PROJECT_ID`)
 
@@ -74,9 +76,11 @@ revcat entitlements get [userId]
 ```
 
 **Arguments:**
+
 - `userId` - RevenueCat app user ID (optional - if omitted, lists all entitlements in the project)
 
 **Flags:**
+
 - `-k, --apiKey` - RevenueCat API key (or set `REVENUECAT_API_KEY`)
 - `-p, --projectId` - RevenueCat project ID (or set `REVENUECAT_PROJECT_ID`)
 
@@ -102,6 +106,7 @@ revcat entitlements add <userId> <entitlementId> <expiration>
 ```
 
 **Arguments:**
+
 - `userId` - RevenueCat app user ID (required)
 - `entitlementId` - Entitlement ID to grant (required)
 - `expiration` - Expiration time (required)
@@ -121,6 +126,7 @@ The expiration can be specified using multiple formats:
 - **Never**: `never` (sets expiration 100 years in the future)
 
 **Flags:**
+
 - `-k, --apiKey` - RevenueCat API key (or set `REVENUECAT_API_KEY`)
 - `-p, --projectId` - RevenueCat project ID (or set `REVENUECAT_PROJECT_ID`)
 
@@ -149,10 +155,12 @@ revcat entitlements del <userId> <entitlementId>
 ```
 
 **Arguments:**
+
 - `userId` - RevenueCat app user ID (required)
 - `entitlementId` - Entitlement ID to revoke (required)
 
 **Flags:**
+
 - `-k, --apiKey` - RevenueCat API key (or set `REVENUECAT_API_KEY`)
 - `-p, --projectId` - RevenueCat project ID (or set `REVENUECAT_PROJECT_ID`)
 
@@ -176,9 +184,11 @@ revcat virtualcurrencies get <userId>
 ```
 
 **Arguments:**
+
 - `userId` - RevenueCat app user ID (required)
 
 **Flags:**
+
 - `-k, --apiKey` - RevenueCat API key (or set `REVENUECAT_API_KEY`)
 - `-p, --projectId` - RevenueCat project ID (or set `REVENUECAT_PROJECT_ID`)
 
@@ -201,11 +211,13 @@ revcat virtualcurrencies add <userId> <currencyCode> <amount>
 ```
 
 **Arguments:**
+
 - `userId` - RevenueCat app user ID (required)
 - `currencyCode` - Virtual currency code (required)
 - `amount` - Amount to add (use negative value to subtract) (required)
 
 **Flags:**
+
 - `-k, --apiKey` - RevenueCat API key (or set `REVENUECAT_API_KEY`)
 - `-p, --projectId` - RevenueCat project ID (or set `REVENUECAT_PROJECT_ID`)
 - `-r, --reference` - Optional reference for the transaction
@@ -232,11 +244,13 @@ revcat virtualcurrencies del <userId> <currencyCode> <amount>
 ```
 
 **Arguments:**
+
 - `userId` - RevenueCat app user ID (required)
 - `currencyCode` - Virtual currency code (required)
 - `amount` - Amount to subtract (required)
 
 **Flags:**
+
 - `-k, --apiKey` - RevenueCat API key (or set `REVENUECAT_API_KEY`)
 - `-p, --projectId` - RevenueCat project ID (or set `REVENUECAT_PROJECT_ID`)
 - `-r, --reference` - Optional reference for the transaction
