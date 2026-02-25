@@ -1,24 +1,21 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/python
 {
   "name": "Revenuecat CLI Dev",
-  "image": "debian:12-slim",
+  "image": "debian:trixie-slim",
   "features": {
     "ghcr.io/devcontainers/features/node:1": {
       "version": "24"
+    },
+    "ghcr.io/devcontainers-extra/features/npm-packages:1": {
+      "packages": "oclif"
     },
     "ghcr.io/devcontainers/features/common-utils:2": {
       "installZsh": false,
       "configureZshAsDefaultShell": false,
       "installOhMyZsh": false,
-      "upgradePackages": true,
-      "username": "developer",
-      "userUid": "1000",
-      "userGid": "1000"
+      "username": "developer"
     }
   },
 
-  // Configure tool-specific properties.
   "customizations": {
     "vscode": {
       "extensions": ["esbenp.prettier-vscode"],
@@ -41,8 +38,5 @@
     }
   },
 
-  // Connect as non-root user
-  "remoteUser": "developer",
-
-  "postCreateCommand": ".devcontainer/post_create.sh"
+  "remoteUser": "developer"
 }
