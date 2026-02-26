@@ -12,6 +12,7 @@
       "installZsh": false,
       "configureZshAsDefaultShell": false,
       "installOhMyZsh": false,
+      "upgradePackages": false,
       "username": "developer"
     }
   },
